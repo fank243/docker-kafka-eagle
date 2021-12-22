@@ -2,29 +2,28 @@
 
 kafka web 监控工具
 
-Github：https://github.com/smartloli/EFAK
+## kafka-eagle
+
+https://github.com/smartloli/EFAK
 
 ## 构建步骤
 
-### 构建镜像
+### docker build
 
 ```bash
 docker build -t kafka-eagle:2.0.8 .
 ```
 
-### 验证镜像
+### docker run
 
 ```bash
 # 验证
 docker run --name kafka-eagle -it kafka-eagle:2.0.8 sh
 
 java -version
-
-# +0800 时区验证
-date -R
 ```
 
-### 推送镜像到hub.docker.com
+### docker push
 
 ```bash
 docker login
@@ -36,9 +35,7 @@ docker tag kafka-eagle:2.0.8 fank243/kafka-eagle:2.0.8
 docker push fank243/kafka-eagle:2.0.8
 ```
 
-## 使用
-
-docker-compose
+## docker-compose
 
 ```yaml
 version: '3.7'
