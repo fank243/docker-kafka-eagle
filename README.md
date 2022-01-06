@@ -4,7 +4,9 @@ kafka web 监控工具
 
 ## kafka-eagle
 
-https://github.com/smartloli/EFAK
+<https://github.com/smartloli/EFAK>
+
+<https://github.com/smartloli/kafka-eagle-bin>
 
 ## 构建步骤
 
