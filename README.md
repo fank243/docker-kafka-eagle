@@ -11,14 +11,14 @@ https://github.com/smartloli/EFAK
 ### docker build
 
 ```bash
-docker build -t kafka-eagle:2.0.8 .
+docker build -t kafka-eagle:${version} .
 ```
 
 ### docker run
 
 ```bash
 # 验证
-docker run --name kafka-eagle -it kafka-eagle:2.0.8 sh
+docker run --name kafka-eagle -it kafka-eagle:${version} sh
 
 java -version
 ```
@@ -29,10 +29,10 @@ java -version
 docker login
 
 # tag 
-docker tag kafka-eagle:2.0.8 fank243/kafka-eagle:2.0.8
+docker tag kafka-eagle:${version} fank243/kafka-eagle:${version}
 
 # push
-docker push fank243/kafka-eagle:2.0.8
+docker push fank243/kafka-eagle:${version}
 ```
 
 ## docker-compose
@@ -41,7 +41,7 @@ docker push fank243/kafka-eagle:2.0.8
 version: '3.7'
 services:
   eagle:
-    image: fank243/kafka-eagle:2.0.8
+    image: fank243/kafka-eagle:${version}
     container_name: eagle
     ports:
       - "8048:8048"
