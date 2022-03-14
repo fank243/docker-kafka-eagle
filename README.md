@@ -21,8 +21,6 @@ docker build -t kafka-eagle:${version} .
 ```bash
 # 验证
 docker run --name kafka-eagle -it kafka-eagle:${version} sh
-
-java -version
 ```
 
 ### docker push
