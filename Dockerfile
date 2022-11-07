@@ -1,4 +1,4 @@
-FROM fank243/dragonwell:1.8.0_312
+FROM fank243/dragonwell:1.8.0_345
 
 ARG version=3.0.2
 WORKDIR /kafka-eagle
