@@ -1,6 +1,6 @@
 FROM fank243/dragonwell:1.8.0_312
 
-ARG version=2.1.0
+ARG version=3.0.2
 WORKDIR /kafka-eagle
 ENV KE_HOME=/kafka-eagle
 ENV EAGLE_VERSION=$version
